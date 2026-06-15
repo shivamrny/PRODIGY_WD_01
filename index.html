@@ -1,9 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Task 01</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PixelWave — Responsive Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <h1>Responsive Landing Page</h1>
+
+    <!-- ===== Fixed Navigation Bar ===== -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Pixel<span>Wave</span></a>
+
+            <!-- Hamburger button (mobile only) -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <!-- Navigation links -->
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== Hero / Home Section ===== -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Hi, I'm <span>Shivam Rauniyar</span></h1>
+            <p> An aspiring web developer focused on creating responsive,
+                interactive, and user-friendly web applications.</p>
+            <a href="#services" class="btn">Explore Services</a>
+        </div>
+    </section>
+
+    <!-- ===== About Section ===== -->
+    <section class="section" id="about">
+        <h2>About Me</h2>
+        <p class="section-text">
+            Hi, I'm <strong>Shivam Rauniyar</strong>, a web development enthusiast with an interest in creating
+            responsive and interactive websites. This landing page was developed using HTML, CSS, and JavaScript to
+            demonstrate a fixed navigation menu with hover and scroll effects.
+        </p>
+    </section>
+
+    <!-- ===== Services Section ===== -->
+    <section class="section alt" id="services">
+        <h2>Services</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Responsive Design</h3>
+                <p>Creating websites that adapt smoothly to mobile, tablet, and desktop screens.</p>
+            </div>
+            <div class="card">
+                <h3>Frontend Development</h3>
+                <p>Building interactive user interfaces using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="card">
+                <h3>UI Design</h3>
+                <p>Designing clean and user-friendly layouts focused on better user experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extra section -->
+    <section class="section" id="features">
+        <h2>Why Work With Me</h2>
+        <p class="section-text">
+            I focus on creating responsive, accessible, and user-friendly web experiences. My goal is to combine clean design with efficient code to build websites that perform well across all devices.
+        </p>
+    </section>
+
+    <!-- ===== Contact Section ===== -->
+    <section class="section alt" id="contact">
+        <h2>Contact</h2>
+        <p class="section-text">Have a project in mind? Reach out directly or send a message below to connect.</p>
+
+        <!-- Direct contact details -->
+        <ul class="contact-info">
+            <li>
+                <span class="contact-label">Email :-</span>
+                <a href="mailto:rauniyar.contact@gmail.com">rauniyar.contact@gmail.com</a>
+            </li>
+            <li>
+                <span class="contact-label">Mobile :-</span>
+                <a href="tel:+918084369021">+91 80843 69021</a>
+            </li>
+            <li>
+                <span class="contact-label">LinkedIn :-</span>
+                <a href="https://www.linkedin.com/in/shivam-rauniyar-142966210" target="_blank"
+                    rel="noopener noreferrer">Shivam Rauniyar</a>
+            </li>
+        </ul>
+
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks! I will be in touch soon.');">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+        <p>&copy; 2026 PixelWave — Designed & built by Shivam Rauniyar.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
